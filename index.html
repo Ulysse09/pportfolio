@@ -8,21 +8,21 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <!-- nav -->
-<nav class="flex justify-between p-8 items-center mb-10 relative">
-    <h1 class="font-Rubik font-bold text-3xl    ">Kabalisa Paul</h1>
-    <div class="flex " >
+<nav class="flex justify-between py-2 px-2 container mx-auto sticky top-0 bg-white      md:py-4  items-center mb-12 ">
+    <h1 class="font-Rubik font-bold text-3xl ">Kabalisa Paul</h1>
+    <div class="flex  " >
         <ul class="space-x-4 font-Rubik font-light hidden md:flex ">
-            <li><a href="" class="hover:underline">About</a></li>
-            <li><a href="" class="hover:underline">Services</a></li>
-            <li><a href="" class="hover:underline">Portfolio</a></li>
-            <li><a href="" class="hover:underline">Testimonials</a></li>
-            <li><a href="" class="hover:underline">Contact </a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#services" class="hover:underline">Services</a></li>
+            <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+            <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+            <li><a href="#contact" class="hover:underline">Contact </a></li>
             
         </ul>
         
         <!-- hamburger icon-->
 
-         <button class="block hamburger md:hidden focus:outline-none " id="menu-btn">
+         <button class="block hamburger md:hidden focus:outline-none flex " id="menu-btn">
             <span class="hamburger-top"></span>
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
@@ -37,11 +37,11 @@
     <div class="md:hidden">
         <div id="menu" class="absolute hidden flex-col items-center self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
             <ul class="space-y-4">
-                <li><a href="" class="hover:underline">About</a></li>
+                <li><a href="#about" class="hover:underline">About</a></li>
                 <li><a href="#services" class="hover:underline">Services</a></li>
-                <li><a href="" class="hover:underline">Portfolio</a></li>
-                <li><a href="" class="hover:underline">Testimonials</a></li>
-                <li><a href="" class="hover:underline">Contact</a></li>
+                <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+                <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
                 
             </ul>
 
@@ -50,22 +50,22 @@
 </nav>
 <!-- body -->
 
-<body>
+<body class="">
     
-    <div class="flex flex-col-reverse p-24 justify-between   md:flex-row  mb-32 space  items-center  container mx-auto ">
+    <div id="about" class="flex flex-col-reverse p-4 md:p-24 justify-between   md:flex-row mb-20  md:mb-32 space  items-center  container mx-auto ">
         <div class=" flex flex-col text-center md:text-left    w-1/2 space-y-12 ">
             <div flex="text-center">
-                <h1 class="text-7xl font-bold font-rubik p-2   ">I am Paul</h1>
+                <h1 class="text-7xl font-bold font-rubik p-2 container   ">I am Paul</h1>
                 
             </div>
-            <div class = "justify-evenly flex flex-row items-center  space-x-4 font-Rubik text-2xl">
+            <div class = "justify-evenly flex flex-row items-center  space-x-4 font-Rubik text-2xl container mx-auto px-2">
                 <p>Web developer </p>
                 <p>/</p>
                 <p>Web designer </p>
                 <p>/</p>
                 <p>UI designer</p>
             </div>
-            <p class="font-Rubik font-light text-xl max-w-md  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
+            <p class="font-Rubik font-light  text-xl max-w-lg  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
             
             <div class="">
                 <button class="px-6 py-4  bg-black font-Rubik text-white rounded-lg  ">
@@ -82,15 +82,15 @@
     </div>
     
     <!-- services -->
-    <div class="  p-24 mx-auto  items-center md:text-left justify-around space-y-12 container mb-32" id="services">
-        <div class=" text-center flex flex-col items-center md:text-left md:items-start   space-y-8">
+    <div id="services" class=" p-4  md:p-24 mx-auto  items-center md:text-left justify-around space-y-12 container md:mb-32" id="services">
+        <div class="text-center flex flex-col items-center md:text-left md:items-start   space-y-8">
     
             <h2 class="text-5xl font-Rubik font-bold">My services</h2>
             <p class="font-Rubik font-light text-xl max-w-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
         </div>
     
         <!-- row1 -->
-        <div class="flex flex-col space-y-6">
+        <div class="flex flex-col space-y-6 container">
            <div class="flex flex-col items-center  md:flex-row space-y-4 md:space-x-4">
                <div class="w-1/2 bg-pink-100 rounded-lg p-6 space-y-4">
                     <div class="flex flex-row items-center space-x-4">
@@ -146,30 +146,33 @@
     
     <!-- portfolio -->
     
-    <div class="p-24  text-center  space-y-4 container mx-auto ">
+    <div id="portfolio" class="md:p-24 p-6 text-center  space-y-4 container mx-auto group ">
         <h2 class=" md:text-left text-5xl font-Rubik font-bold">My Portfolio</h2>
-        <p class="font-Rubik font-light text-xl max-w-lg md:text-left  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
-        <div class="flex flex-col ">
+        <p class="font-Rubik font-light text-xl max-w-lg text-center  md:text-left  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
+        <div class="flex flex-col  ">
     
-            <div class="flex flex-col md:flex-row space-y-4 items-center  space-x-4 p-8 ">
-               <div>
-                  <a href="http://todo-ulysse09.vercel.app"><img src="./img/portfolio-items.png" alt=""> </a>
+            <div class="flex  flex-col   md:flex-row space-y-4 items-center  space-x-4 p-8 group">
+               <div class="group-hover:blur-sm hover:!blur-none">
+                  <a class="" href="http://todo-ulysse09.vercel.app"><img src="./img/portfolio-items.png" alt=""> </a>
                </div>
-               <div>
-                   <img src="./img/portfolio-items1.png" alt="">
-               </div>
-               <div>
+               <div class="group-hover:blur-sm hover:!blur-none">
+                   <a href="https://air-bnb-clone-pied.vercel.app/">
+                    <img src="./img/portfolio-items1.png" alt="">
+                  
+                    </a>
+            </div>
+               <div class="group-hover:blur-sm hover:!blur-none">
                    <img src="./img/portfolio-items2.png" alt="">
                </div>
             </div>
-            <div class="flex space-x-4 p-8  flex-col md:flex-row space-y-4 items-center">
-               <div class="">
+            <div class="flex space-x-4 p-8 group flex-col md:flex-row space-y-4 items-center">
+               <div class="group-hover:blur-sm hover:!blur-none">
                    <img src="./img/portfolio-items3.png" alt="">
                </div>
-               <div>
+               <div class="group-hover:blur-sm hover:!blur-none">
                    <img src="./img/portfolio-items4.png" alt="">
                </div>
-               <div>
+               <div class="group-hover:blur-sm hover:!blur-none">
                    <img src="./img/portfolio-items5.png" alt="">
                </div>
             </div>
@@ -179,10 +182,10 @@
     
     <!-- Testimonials -->
      
-    <div class="flex-row items-center p-24  justify-around space-y-4 container mx-auto ">
+    <div id="testimonials" class="flex-row items-center md:p-24 p-6  justify-around space-y-16 container mx-auto ">
         <div class="text-center md:text-left">
     
-            <h2 class="text-5xl font-Rubik font-bold">Testimonials</h2>
+            <h2 class="text-5xl font-Rubik font-bold mb-10">Testimonials</h2>
             <p class="font-Rubik font-light text-xl max-w-lg  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
         </div>
     
@@ -255,7 +258,7 @@
     
     <!-- Get in touch -->
     
-    <div class="p-24 mx-auto container justify-around space-y-4 ">
+    <div id="contact" class="p-8 md:p-24 mx-auto container justify-around space-y-4 text-center md:text-left ">
         <h2 class="text-5xl font-Rubik font-bold">Get in touch</h2>
         <p class="font-Rubik font-light text-xl max-w-lg  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
         
@@ -288,9 +291,9 @@
     </div>
     
     <!-- footer -->
-    <div class="bg-pink-100">
+    <div class="bg-pink-100 ">
 
-        <div class="bg-pink-100 flex justify-between font-Rubik font-bold px-6 py-10 container mx-auto">
+        <div class="bg-pink-100 flex flex-col-reverse items-center space-y-4 md:flex-row justify-between font-Rubik font-bold px-6 py-10 container mx-auto">
             <div>
                 <p class ='text-4xl'>Let's get started</p>
             </div>
