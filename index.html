@@ -53,7 +53,7 @@
 <body class="">
     
     <div id="about" class="flex flex-col-reverse p-4 md:p-24 justify-between   md:flex-row mb-20  md:mb-32 space  items-center  container mx-auto ">
-        <div class=" flex flex-col text-center md:text-left    w-1/2 space-y-12 ">
+        <div class=" flex flex-col text-center md:text-left    w-1/ space-y-12  ">
             <div flex="text-center">
                 <h1 class="text-7xl font-bold font-rubik p-2 container   ">I am Paul</h1>
                 
@@ -65,7 +65,7 @@
                 <p>/</p>
                 <p>UI designer</p>
             </div>
-            <p class="font-Rubik font-light  text-xl max-w-lg  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
+            <p class="font-Rubik font-light    text-xl max-w-lg  ">Hi there! I’m Kabalisa Paul. As a Web developer and designer, my goal is to create beautiful, functional designs that make people’s lives easier. I’ve worked as a developer for over 2 years now, and I’ve had the pleasure of working with some amazing clients along the way.When I’m not developing, you can find me playing basketball in the courts of Kigali or trying out new creative endeavours.</p>
             
             <div class="">
                 <button class="px-6 py-4  bg-black font-Rubik text-white rounded-lg  ">
@@ -86,7 +86,7 @@
         <div class="text-center flex flex-col items-center md:text-left md:items-start   space-y-8">
     
             <h2 class="text-5xl font-Rubik font-bold">My services</h2>
-            <p class="font-Rubik font-light text-xl max-w-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
+            <p class="font-Rubik font-light text-xl max-w-lg  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
         </div>
     
         <!-- row1 -->
@@ -146,36 +146,48 @@
     
     <!-- portfolio -->
     
-    <div id="portfolio" class="md:p-24 p-6 text-center  space-y-4 container mx-auto group ">
-        <h2 class=" md:text-left text-5xl font-Rubik font-bold">My Portfolio</h2>
+    <div id="portfolio" class="md:p-24 p-6 text-center  space-y-16 container mx-auto group md:mb-24 ">
+        <h2 class=" text-center md:text-left text-5xl font-Rubik font-bold">My Portfolio</h2>
         <p class="font-Rubik font-light text-xl max-w-lg text-center  md:text-left  ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente et tempore odit quaerat quisquam, iusto distinctio veniam eligendi accusamus itaque numquam culpa ratione aliquid a placeat at laboriosam sit assumenda.</p>
         <div class="flex flex-col  ">
     
-            <div class="flex  flex-col   md:flex-row space-y-4 items-center  space-x-4 p-8 group">
-               <div class="group-hover:blur-sm hover:!blur-none">
-                  <a class="" href="http://todo-ulysse09.vercel.app"><img src="./img/portfolio-items.png" alt=""> </a>
+            <div class="flex  flex-col items-center
+               md:flex-row space-y-4 md:items-center  space-x-4 p-8 group">
+               <div class="group-hover:blur-sm hover:!blur-none space-y-6 w-72 ">
+                  <a  href="http://todo-ulysse09.vercel.app"><img class="rounded-md" src="./img/todolist.jpg" alt=""> </a>
+
+                  <h2 class="font-Rubik font-semibold text-xl">To-do list</h2>
+
+                <button>
+                    <a href="http://todo-ulysse09.vercel.app" class="bg-black px-2 py-3 text-white rounded-md">Live demo</a>
+                </button>
                </div>
-               <div class="group-hover:blur-sm hover:!blur-none">
+               <div class="group-hover:blur-sm hover:!blur-none space-y-">
                    <a href="https://air-bnb-clone-pied.vercel.app/">
-                    <img src="./img/portfolio-items1.png" alt="">
+                    <img class="" src="./img/airbnbimg.png" alt="">
                   
                     </a>
+                    <div class="flex flex-col items-center space-y-6 mt-12">
+                        
+                        <h2 class="font-Rubik font-semibold text-xl ">Air-bnb-clone</h2>
+                        <button>
+                            <a href="https://air-bnb-clone-pied.vercel.app/" class="bg-black px-2 py-3 text-white rounded-md">Live demo</a>
+                        </button>
+                    </div>
             </div>
-               <div class="group-hover:blur-sm hover:!blur-none">
-                   <img src="./img/portfolio-items2.png" alt="">
+               <div class="group-hover:blur-sm w-80 hover:!blur-none space-y-6 p-4 ">
+                    <a href="https://snake-game-ulysse09.vercel.app/"><img class="rounded-md" src="./img/snake-game.jpg" alt=""></a>
+                   
+                   
+                   <h2 class="font-Rubik font-semibold text-xl">Snake-game</h2>
+                   
+                   <button>
+                    <a href="https://snake-game-ulysse09.vercel.app/" class="bg-black px-2 py-3 text-white rounded-md">Live demo</a>
+                </button>
                </div>
+               
             </div>
-            <div class="flex space-x-4 p-8 group flex-col md:flex-row space-y-4 items-center">
-               <div class="group-hover:blur-sm hover:!blur-none">
-                   <img src="./img/portfolio-items3.png" alt="">
-               </div>
-               <div class="group-hover:blur-sm hover:!blur-none">
-                   <img src="./img/portfolio-items4.png" alt="">
-               </div>
-               <div class="group-hover:blur-sm hover:!blur-none">
-                   <img src="./img/portfolio-items5.png" alt="">
-               </div>
-            </div>
+           
                      
         </div>
     </div>
