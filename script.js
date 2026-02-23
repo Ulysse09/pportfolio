@@ -39,3 +39,47 @@ form.addEventListener('submit', (e) => {
     console.log('biish');
     
 })
+
+// dark-mode 
+
+let toggle = document.getElementById('dark-mode');
+toggle.addEventListener('click',()=>{
+    document.body.classList.toggle('dark');
+    
+   
+})
+
+// cursor-animation
+
+const words = ['a web developer','a mobile app dev','a UI/UX designer']
+const el = document.getElementById('text')
+
+let wordIndex = 0 
+let charIndex = 0 
+let isDeleting = false 
+
+function type() {
+    let currentWord = words[wordIndex];
+
+    if (isDeleting) {
+        charIndex--
+    } else {
+        charIndex++
+    }
+
+    
+
+    el.textContent = currentWord.substring(0,charIndex)
+
+    if (!isDeleting && charIndex===currentWord.length) {
+        setTimeout(()=>isDeleting = true,1000)
+    }
+
+    if (isDeleting &&charIndex===0){
+        isDeleting =false;
+        wordIndex = (wordIndex +1) % words.length;
+    }
+    setTimeout(type,isDeleting?45:125);
+}
+
+type()

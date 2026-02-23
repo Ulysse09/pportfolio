@@ -43,3 +43,31 @@
 .open .hamburger-bottom {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+/* dark mode */
+:root {
+  --bg: white;
+  --text: black;
+  
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+ 
+body.dark {
+  --bg: #121212;
+  --text: #f0f0f0;
+  
+}
+/* cursor animation */
+.cursor {
+    animation : blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+    
+}
+
+ 
