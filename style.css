@@ -50,16 +50,20 @@
   
 }
 
+/* system preference dark mode */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #f0f0f0;
+  }
+}
 body {
   background-color: var(--bg);
   color: var(--text);
 }
  
-body.dark {
-  --bg: #121212;
-  --text: #f0f0f0;
-  
-}
+ 
 /* cursor animation */
 .cursor {
     animation : blink 1s infinite;

@@ -40,36 +40,59 @@ form.addEventListener('submit', (e) => {
     
 })
 
-// dark-mode 
+ 
 
-let toggle = document.getElementById('dark-mode');
-toggle.addEventListener('click',()=>{
-    document.body.classList.toggle('dark');
-    
-   
-})
+
 
 // cursor-animation
 
-const words = ['a web developer','a mobile app dev','a UI/UX designer']
+const words = ['Websites. ','Mobile Apps. ','User Xperiences. ']
+const staticText = 'I build ';
 const el = document.getElementById('text')
 
 let wordIndex = 0 
 let charIndex = 0 
 let isDeleting = false 
+let firstPhase = true
+
 
 function type() {
+     
     let currentWord = words[wordIndex];
 
+
+    
+    if (firstPhase) {
+        
+        const fullText= staticText + currentWord;
+        charIndex++;
+
+        
+        el.innerHTML = fullText.substring(0,charIndex) + `<span class="cursor">|</span>`
+        
+        if (charIndex === fullText.length) {
+            setTimeout(()=>{
+                firstPhase = false;
+                isDeleting = true
+                charIndex = currentWord.length
+            },1000)
+        }
+        
+        return setTimeout(type,160)
+    }
+
+    
     if (isDeleting) {
         charIndex--
     } else {
         charIndex++
+        
     }
 
     
 
-    el.textContent = currentWord.substring(0,charIndex)
+    const dynamicText = currentWord.substring(0,charIndex);
+    el.innerHTML = staticText + dynamicText +`<span class="cursor">|</span>`
 
     if (!isDeleting && charIndex===currentWord.length) {
         setTimeout(()=>isDeleting = true,1000)
@@ -79,7 +102,7 @@ function type() {
         isDeleting =false;
         wordIndex = (wordIndex +1) % words.length;
     }
-    setTimeout(type,isDeleting?45:125);
+    setTimeout(type,isDeleting?55:160);
 }
 
 type()
