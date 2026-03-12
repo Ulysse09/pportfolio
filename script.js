@@ -108,14 +108,18 @@ function type() {
 
 type()
 
+// should a function be called after or befor listeners 
+
 const btn_wa = document.getElementById("wa-btn");
         btn_wa.addEventListener("click", () => {
+        plausible("whatsapp_click");
         console.log("WhatsApp CTA clicked");
         });
-
+  
+// 
 const popup = document.getElementById("popup");
 let shown = false;
-let s
+
 
 window.addEventListener("scroll", () => {
 
