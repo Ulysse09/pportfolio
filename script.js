@@ -108,15 +108,15 @@ function type() {
 
 type()
 
-// should a function be called after or befor listeners 
+// should a function be called after or befor listeners ??
 
-const btn_wa = document.getElementById("wa-btn");
-        btn_wa.addEventListener("click", () => {
-        plausible("whatsapp_click");
-        console.log("WhatsApp CTA clicked");
-        });
+// const btn_wa = document.getElementById("wa-btn");
+//         btn_wa.addEventListener("click", () => {
+//         plausible("whatsapp_click");
+//         console.log("WhatsApp CTA clicked");
+//         });
   
-// 
+// Popup logic
 const popup = document.getElementById("popup");
 let shown = false;
 
@@ -131,4 +131,18 @@ window.addEventListener("scroll", () => {
       shown = true;
   }
 
+});
+
+// analytics logic
+
+document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    
+    console.log('Location :',btn.dataset.location)
+    plausible('whatsapp_click', {
+      props: {
+        location: btn.dataset.location
+      }
+    });
+  });
 });
