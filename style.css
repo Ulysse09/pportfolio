@@ -74,4 +74,15 @@ body {
     
 }
 
- 
+ /* soft-bounce */
+ @keyframes soft-bounce {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+.soft-bounce {
+  animation: soft-bounce 2s infinite;
+}

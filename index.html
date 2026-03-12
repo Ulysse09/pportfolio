@@ -13,7 +13,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <!-- body -->
 
-<body class="">
+<body class="relative">
+
     <nav class=" flex justify-between  py-2 px-2   sticky top-0       md:py-4  items-center mb-12 ">
     <h1 class="font-Rubik font-bold text-3xl">Kabalisa Paul</h1>
     
@@ -55,6 +56,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     </div>
 </nav>
 
+
      
     <div id="about" class="flex flex-col-reverse p-4 md:p-12 justify-between  md:flex-row mb-20  md:mb-32 space  items-center  container mx-auto ">
         <div class=" flex flex-col text-center md:text-left  gap-y-12  ">
@@ -67,7 +69,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
             
             <div class=" flex justify-center md:justify-start">
                 <button class="px-6 py-4  bg-green-500 font-Rubik font-semibold text-white rounded-lg flex items-center justify-center space-x-2 ">
-                    <a href="https://wa.me/250784824525?text=Hi%20Ulysse%20I%20scanned%20your%20QR%20card%20Lets%20talks%20some%20more" target="_blank">
+                    <a id="wa-btn" href="https://wa.me/250784824525?text=Hi%20Paul%20I%20scanned%20your%20QR%20card%20Lets%20talks%20some%20more" target="_blank">
                         Let's Build on WhatsApp
                     </a>
                     <i class="fa-brands fa-whatsapp text-4xl"></i>
@@ -81,6 +83,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         </div>
             
     </div>
+
+    <!-- pop-up -->
+     <div id="popup" class=" z-50 fixed md:top-30 top-10 bg-white soft-bounce text-black hidden  rounded-lg  md:inset-36  border-2 radius-2xl dark:border-white   p-12">
+        <div class=" flex flex-col items-center space-y-[2rem] p ">
+            <h2 class="text-4xl font-bold  ">Let's Chat some more</h2>
+            <p class="text-3xl max-w-lg ">Click for a free developer consultation</p>
+
+            <div class=" flex justify-center md:justify-start">
+                <button class="px-6 py-4  bg-green-500 font-Rubik font-semibold text-white rounded-lg flex items-center justify-center space-x-2 ">
+                    <a id="wa-btn" href="https://wa.me/250784824525?text=Hi%20Paul%20I%20scanned%20your%20QR%20card%20Lets%20talks%20some%20more" target="_blank">
+                        Let's Build on WhatsApp
+                    </a>
+                    <i class="fa-brands fa-whatsapp text-4xl"></i>
+                </button>
+    
+            </div>
+
+        </div>
+     </div>
 
     <!-- portfolio -->
     
@@ -388,7 +409,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         </div>
     
     </div>
-    <script src="./script.js"></script>
+    
+    <script src="./script.js"> </script>
+    <!-- <script>
+        const btn = document.getElementById("wa-btn");
+        btn.addEventListener("click", () => {
+        console.log("WhatsApp CTA clicked");
+        });
+
+
+    </script> -->
 </body>
 
 

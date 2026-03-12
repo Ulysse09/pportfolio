@@ -2,6 +2,7 @@ let btn = document.getElementById('menu-btn');
 let nav = document.getElementById('menu');
 
 
+
 btn.addEventListener('click', function(){
     btn.classList.toggle('open');
     nav.classList.toggle('flex');
@@ -46,7 +47,7 @@ form.addEventListener('submit', (e) => {
 
 // cursor-animation
 
-const words = ['FinTech dashboards. ','Optimized Sales Funnels. ','AML/KYC platforms']
+const words = ['Optimized Sales Funnels. ','Pristine Product Pages.','Seamless Fintech intergrations.']
 const staticText = 'I build ';
 const el = document.getElementById('text')
 
@@ -106,3 +107,24 @@ function type() {
 }
 
 type()
+
+const btn_wa = document.getElementById("wa-btn");
+        btn_wa.addEventListener("click", () => {
+        console.log("WhatsApp CTA clicked");
+        });
+
+const popup = document.getElementById("popup");
+let shown = false;
+let s
+
+window.addEventListener("scroll", () => {
+
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition > 550 && !shown) {
+    popup.classList.remove("hidden");
+    // popup.classList.add("animate-bounce"); 
+      shown = true;
+  }
+
+});
