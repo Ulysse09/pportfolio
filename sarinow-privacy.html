@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SariNow Privacy Policy - how we collect, use, and protect your information as a rider or driver.">
 
     <title>SariNow Privacy Policy</title>
 
@@ -17,26 +18,39 @@
                         brand: {
                             orange: "#f97316",
                             dark: "#0b0b0f",
-                            card: "#15151c"
+                            card: "#15151c",
+                            line: "#232330"
                         }
                     }
                 }
             }
         }
     </script>
-</head>
 
+    <style>
+        html { scroll-behavior: smooth; }
+        .toc-link { transition: color .15s ease, padding-left .15s ease; }
+        .toc-link:hover { color: #f97316; padding-left: 4px; }
+        section:target {
+            animation: highlight 1.4s ease;
+        }
+        @keyframes highlight {
+            0% { background-color: rgba(249,115,22,0.08); }
+            100% { background-color: transparent; }
+        }
+    </style>
+</head>
 
 <body class="bg-brand-dark text-gray-200 min-h-screen">
 
     <main class="max-w-4xl mx-auto px-6 py-16">
 
         <!-- Header -->
-        <section class="mb-12">
+        <section class="mb-10">
 
             <div class="flex items-center gap-3 mb-6">
 
-                <div class="w-12 h-12 rounded-xl bg-orange-500 flex items-center justify-center">
+                <div class="w-12 h-12 rounded-xl bg-orange-500 flex items-center justify-center flex-shrink-0">
                     <span class="text-white font-bold text-xl">
                         S
                     </span>
@@ -48,102 +62,306 @@
 
             </div>
 
-
             <p class="text-gray-400">
                 Last updated: July 2026
             </p>
 
+            <p class="leading-relaxed text-gray-300 mt-6">
+                SariNow is a designated driver mobile app operated by SariTech ("SariNow," "we," "us," or "our").
+                This policy explains what information we collect from riders and drivers, why we collect it, how it's
+                used, who it's shared with, and the choices and rights you have. It applies to the SariNow mobile app
+                on iOS and Android and any related services.
+            </p>
         </section>
 
-
+        <!-- Table of contents -->
+        <nav class="bg-brand-card border border-brand-line rounded-2xl p-6 mb-10">
+            <h2 class="text-white font-semibold mb-3 text-sm uppercase tracking-wide text-gray-400">On this page</h2>
+            <ol class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm list-decimal list-inside">
+                <li><a class="toc-link text-gray-300" href="#info-we-collect">Information we collect</a></li>
+                <li><a class="toc-link text-gray-300" href="#account-contact">Account &amp; contact information</a></li>
+                <li><a class="toc-link text-gray-300" href="#location">Location data</a></li>
+                <li><a class="toc-link text-gray-300" href="#kyc">Driver identity verification (KYC)</a></li>
+                <li><a class="toc-link text-gray-300" href="#rides">Ride &amp; trip data</a></li>
+                <li><a class="toc-link text-gray-300" href="#payments">Payment information</a></li>
+                <li><a class="toc-link text-gray-300" href="#ratings">Ratings &amp; reviews</a></li>
+                <li><a class="toc-link text-gray-300" href="#notifications">Notifications</a></li>
+                <li><a class="toc-link text-gray-300" href="#device">Device &amp; permissions</a></li>
+                <li><a class="toc-link text-gray-300" href="#how-we-use">How we use information</a></li>
+                <li><a class="toc-link text-gray-300" href="#sharing">Who we share information with</a></li>
+                <li><a class="toc-link text-gray-300" href="#storage-security">Data storage &amp; security</a></li>
+                <li><a class="toc-link text-gray-300" href="#retention">Data retention</a></li>
+                <li><a class="toc-link text-gray-300" href="#your-rights">Your rights &amp; account deletion</a></li>
+                <li><a class="toc-link text-gray-300" href="#children">Children's privacy</a></li>
+                <li><a class="toc-link text-gray-300" href="#changes">Changes to this policy</a></li>
+                <li><a class="toc-link text-gray-300" href="#contact">Contact us</a></li>
+            </ol>
+        </nav>
 
         <!-- Policy Card -->
-        <div class="bg-brand-card border border-gray-800 rounded-2xl p-8 shadow-xl space-y-10">
+        <div class="bg-brand-card border border-brand-line rounded-2xl p-8 shadow-xl space-y-12">
 
-
-            <section>
+            <section id="info-we-collect">
                 <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                    Information We Collect
+                    1. Information We Collect
                 </h2>
-
                 <p class="leading-relaxed text-gray-300">
-                    SariNow collects account information, location data,
-                    and other information required to provide designated
-                    driver services. This may include information provided
-                    during account registration and information required
-                    to ensure safe and reliable transportation services.
+                    SariNow collects the information described below to connect riders with drivers, verify driver
+                    identity, process payments, and keep the platform safe. We collect information you give us
+                    directly, information generated automatically as you use the app, and, for drivers, information
+                    required to verify identity and driving eligibility.
                 </p>
             </section>
 
-
-
-            <section>
+            <section id="account-contact">
                 <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                    How We Use Information
+                    2. Account &amp; Contact Information
                 </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    When you create a SariNow account, we collect:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li>Your first and last name</li>
+                    <li>Email address</li>
+                    <li>Phone number, which we verify with a one-time passcode (OTP) sent by SMS</li>
+                    <li>Your account type — rider or driver</li>
+                    <li>If you sign in with Google, basic profile information provided by Google (such as your name and email address) via secure sign-in (OAuth)</li>
+                </ul>
+            </section>
 
-                <p class="leading-relaxed text-gray-300">
-                    We use collected information to provide, maintain,
-                    improve, and secure the SariNow platform. Information
-                    may be used to connect users with drivers, improve
-                    service quality, and comply with legal requirements.
+            <section id="location">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    3. Location Data
+                </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    SariNow is a location-based service, so location data is central to how it works:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li>We collect your device's precise (GPS) location, while the app is open and in use, to match riders with nearby drivers, calculate routes and directions, and show accurate pickup and drop-off points, using Google Maps and Google Places.</li>
+                    <li>We do not collect your location while the app is closed or running in the background.</li>
+                    <li>Location permissions can be granted, changed, or withdrawn at any time in your device's Settings. If location access is denied or turned off, core features such as driver matching and navigation will not function correctly.</li>
+                </ul>
+            </section>
+
+            <section id="kyc">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    4. Driver Identity Verification (KYC)
+                </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    To keep riders safe and comply with our obligations as a transportation platform, drivers must
+                    complete an identity verification ("KYC") process before accepting rides. As part of this
+                    process we collect:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li><strong class="text-white">Government-issued ID</strong> — photos of the front and back of a national ID or equivalent document, uploaded from your photo library</li>
+                    <li><strong class="text-white">Driving license</strong> — a photo of your driving license</li>
+                    <li><strong class="text-white">Selfie verification</strong> — a live photo taken with your device's front camera, used to confirm that you are the person shown on the submitted ID</li>
+                </ul>
+                <p class="leading-relaxed text-gray-300 mt-3">
+                    Submitted documents are reviewed before a driver account is approved to accept rides. We request
+                    camera access only to capture the verification selfie, and photo library access only to select
+                    and upload the images above — the app does not access your camera or photos for any other
+                    purpose. KYC documents are stored securely and used solely for identity verification, fraud
+                    prevention, and compliance purposes.
                 </p>
             </section>
 
-
-
-            <section>
+            <section id="rides">
                 <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                    Location Data
+                    5. Ride &amp; Trip Data
                 </h2>
-
-                <p class="leading-relaxed text-gray-300">
-                    SariNow may collect location information to enable
-                    ride matching, navigation, safety features, and
-                    accurate service delivery. Location permissions can
-                    be managed through your device settings.
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    When you book, accept, or complete a ride, we collect and store trip records, including:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li>Pickup and destination addresses</li>
+                    <li>The identities of the rider and driver involved in each trip</li>
+                    <li>Trip status (e.g., requested, in progress, completed)</li>
+                    <li>Fare and payment details associated with the trip</li>
+                </ul>
+                <p class="leading-relaxed text-gray-300 mt-3">
+                    This information is shared between the matched rider and driver only to the extent necessary to
+                    complete the trip (for example, so a driver can see the pickup address, or a rider can see
+                    driver arrival status).
                 </p>
             </section>
 
-
-
-            <section>
+            <section id="payments">
                 <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                    Data Security
+                    6. Payment Information
                 </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    SariNow currently supports cash payments only. Payment is made directly between the rider and
+                    driver in person — SariNow does not process, handle, or take custody of any payment, and does
+                    not collect card numbers, mobile money PINs, or any other payment credentials.
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li>Once a rider confirms that cash payment has been made, we store a record of that confirmation associated with the trip: the amount, the fact that it was paid in cash, a reference number for the transaction, and its status (e.g., successful).</li>
+                    <li>This record is used only to maintain an accurate trip and earnings history for drivers and riders, and to support customer service and dispute resolution — it is not a financial transaction processed by SariNow itself.</li>
+                    <li>Additional payment methods (such as card, mobile money, or PayPal) may be introduced in the future. If they are, this policy will be updated before they become available to describe how those payments are handled and by whom.</li>
+                </ul>
+            </section>
 
+            <section id="ratings">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    7. Ratings &amp; Reviews
+                </h2>
                 <p class="leading-relaxed text-gray-300">
-                    We take reasonable measures to protect your
-                    information from unauthorized access, disclosure,
-                    or misuse.
+                    After a trip, riders and drivers may rate each other and leave an optional written comment.
+                    Ratings and comments are linked to the relevant trip and to the rider and driver profiles
+                    involved, and are used to maintain service quality and platform safety.
                 </p>
             </section>
 
-
-
-            <section>
+            <section id="notifications">
                 <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                    Contact
+                    8. Notifications
                 </h2>
-
                 <p class="leading-relaxed text-gray-300">
-                    For privacy questions or requests regarding your
-                    information, please contact KaribuTech.
+                    We use real-time notifications to keep riders and drivers updated on trip and payment status
+                    (for example, "driver arriving," "payment successful"). These notifications are delivered
+                    through our backend infrastructure and may include your ride status, payment status, and amount,
+                    shared only with the rider and driver involved in that specific trip.
                 </p>
             </section>
 
+            <section id="device">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    9. Device &amp; App Permissions
+                </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    Depending on your role and how you use the app, SariNow may request the following device
+                    permissions:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li><strong class="text-white">Location</strong> (while using the app only) — for matching, navigation, and live tracking</li>
+                    <li><strong class="text-white">Camera</strong> — for driver selfie identity verification only</li>
+                    <li><strong class="text-white">Photo library</strong> — to upload ID and driving license images during driver verification</li>
+                </ul>
+                <p class="leading-relaxed text-gray-300 mt-3">
+                    SariNow does not request access to your microphone or audio recording, and does not access
+                    these permissions in the background outside of the purposes described above. You can review or
+                    change any permission at any time in your device settings.
+                </p>
+            </section>
+
+            <section id="how-we-use">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    10. How We Use Information
+                </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">We use the information described above to:</p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li>Create and manage your rider or driver account</li>
+                    <li>Match riders with available, verified drivers and calculate routes</li>
+                    <li>Verify driver identity and driving eligibility before approving a driver account</li>
+                    <li>Process and record payments for completed trips</li>
+                    <li>Send trip, arrival, and payment status notifications</li>
+                    <li>Maintain ratings and address safety or quality concerns</li>
+                    <li>Detect, investigate, and prevent fraud, abuse, or violations of our terms</li>
+                    <li>Maintain, secure, and improve the SariNow platform</li>
+                    <li>Comply with applicable legal and regulatory requirements</li>
+                </ul>
+            </section>
+
+            <section id="sharing">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    11. Who We Share Information With
+                </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    We do not sell your personal information. We share information only as necessary to operate
+                    SariNow:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                    <li><strong class="text-white">Between matched riders and drivers</strong> — limited trip details (e.g., name, pickup/destination, driver arrival status) needed to complete a ride</li>
+                    <li><strong class="text-white">Google</strong> — for maps, place search/autocomplete, directions, and Google sign-in</li>
+                    <li><strong class="text-white">Our backend and infrastructure providers</strong> (including Supabase, for account, trip, payment, and KYC data storage, and Firebase, for authentication support and real-time trip notifications) — who process data on our behalf under contractual confidentiality and security obligations</li>
+                    <li><strong class="text-white">Legal and safety purposes</strong> — where required by law, legal process, or to protect the rights, safety, or property of SariNow, our users, or the public</li>
+                </ul>
+            </section>
+
+            <section id="storage-security">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    12. Data Storage &amp; Security
+                </h2>
+                <p class="leading-relaxed text-gray-300">
+                    Your information is stored using reputable third-party infrastructure providers with
+                    industry-standard security controls, including encrypted connections and access controls that
+                    restrict who can view sensitive data such as KYC documents and payment records. Privileged
+                    actions, such as permanently deleting an account, are performed only through secured backend
+                    functions and are never handled with elevated credentials inside the mobile app itself. While we
+                    take reasonable measures to protect your information from unauthorized access, disclosure, or
+                    misuse, no method of electronic storage or transmission is 100% secure.
+                </p>
+            </section>
+
+            <section id="retention">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    13. Data Retention
+                </h2>
+                <p class="leading-relaxed text-gray-300">
+                    We retain account, trip, payment, and KYC information for as long as your account is active and
+                    for a reasonable period afterward, where needed to resolve disputes, maintain financial and
+                    safety records, or comply with legal obligations. When you delete your account (see below), your
+                    associated payment records, ratings, KYC submissions, and trip history tied to your profile are
+                    deleted from our active systems, subject to any information we are legally required to retain.
+                </p>
+            </section>
+
+            <section id="your-rights">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    14. Your Rights &amp; Account Deletion
+                </h2>
+                <p class="leading-relaxed text-gray-300 mb-3">
+                    You can request access to, correction of, or deletion of your personal information at any time
+                    by contacting us (see below). Depending on your location, you may have additional rights under
+                    applicable data protection law.
+                </p>
+                <p class="leading-relaxed text-gray-300">
+                    SariNow also supports in-app account deletion. When you delete your account, we permanently
+                    remove your payment records, ratings, driver KYC submissions, and trip history associated with
+                    your profile, and then delete your account credentials. This action is irreversible.
+                </p>
+            </section>
+
+            <section id="children">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    15. Children's Privacy
+                </h2>
+                <p class="leading-relaxed text-gray-300">
+                    SariNow is not directed at children, and is not intended for use by anyone under the age of 18.
+                    We do not knowingly collect personal information from children. If you believe a child has
+                    provided us with personal information, please contact us so we can take appropriate action.
+                </p>
+            </section>
+
+            <section id="changes">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    16. Changes to This Policy
+                </h2>
+                <p class="leading-relaxed text-gray-300">
+                    We may update this Privacy Policy from time to time to reflect changes to the app, our
+                    practices, or legal requirements. We will update the "Last updated" date at the top of this
+                    page, and where changes are material, we will provide additional notice through the app.
+                </p>
+            </section>
+
+            <section id="contact">
+                <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                    17. Contact
+                </h2>
+                <p class="leading-relaxed text-gray-300">
+                    For privacy questions, or to request access to, correction of, or deletion of your information,
+                    please contact SariTech at
+                    <a class="text-orange-400 hover:underline" href="mailto:upkabalisa@gmail.com">upkabalisa@gmail.com</a>.
+                </p>
+            </section>
 
         </div>
 
-
-
         <!-- Footer -->
         <footer class="mt-10 text-center text-sm text-gray-500">
-
-            © 2026 KaribuTech. All rights reserved.
-
+            © 2026 SariTech. All rights reserved.
         </footer>
-
 
     </main>
 

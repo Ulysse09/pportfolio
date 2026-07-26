@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SariNow Terms and Conditions - the rules that govern use of the SariNow app for riders and drivers.">
 
     <title>SariNow Terms and Conditions</title>
 
@@ -17,7 +18,8 @@
                         brand: {
                             orange: "#f97316",
                             dark: "#0b0b0f",
-                            card: "#15151c"
+                            card: "#15151c",
+                            line: "#232330"
                         }
                     }
                 }
@@ -25,6 +27,18 @@
         }
     </script>
 
+    <style>
+        html { scroll-behavior: smooth; }
+        .toc-link { transition: color .15s ease, padding-left .15s ease; }
+        .toc-link:hover { color: #f97316; padding-left: 4px; }
+        section:target {
+            animation: highlight 1.4s ease;
+        }
+        @keyframes highlight {
+            0% { background-color: rgba(249,115,22,0.08); }
+            100% { background-color: transparent; }
+        }
+    </style>
 </head>
 
 
@@ -35,11 +49,11 @@
 
 
     <!-- Header -->
-    <section class="mb-12">
+    <section class="mb-10">
 
         <div class="flex items-center gap-3 mb-6">
 
-            <div class="w-12 h-12 rounded-xl bg-orange-500 flex items-center justify-center">
+            <div class="w-12 h-12 rounded-xl bg-orange-500 flex items-center justify-center flex-shrink-0">
                 <span class="text-white font-bold text-xl">
                     S
                 </span>
@@ -47,7 +61,7 @@
 
 
             <h1 class="text-3xl md:text-5xl font-bold text-white">
-                SariNow Terms & Conditions
+                SariNow Terms &amp; Conditions
             </h1>
 
         </div>
@@ -57,130 +71,364 @@
             Last updated: July 2026
         </p>
 
+        <p class="leading-relaxed text-gray-300 mt-6">
+            These Terms and Conditions ("Terms") govern your access to and use of the SariNow mobile app, operated
+            by SariTech ("SariNow," "we," "us," or "our"), whether you are using SariNow as a rider or as a
+            driver. By creating an account or using SariNow, you agree to these Terms. If you do not agree, please
+            do not use the app.
+        </p>
     </section>
 
+    <!-- Table of contents -->
+    <nav class="bg-brand-card border border-brand-line rounded-2xl p-6 mb-10">
+        <h2 class="text-white font-semibold mb-3 text-sm uppercase tracking-wide text-gray-400">On this page</h2>
+        <ol class="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm list-decimal list-inside">
+            <li><a class="toc-link text-gray-300" href="#acceptance">Acceptance of terms</a></li>
+            <li><a class="toc-link text-gray-300" href="#about">About SariNow</a></li>
+            <li><a class="toc-link text-gray-300" href="#eligibility">Eligibility &amp; accounts</a></li>
+            <li><a class="toc-link text-gray-300" href="#driver-verification">Driver eligibility &amp; verification</a></li>
+            <li><a class="toc-link text-gray-300" href="#user-responsibilities">User responsibilities</a></li>
+            <li><a class="toc-link text-gray-300" href="#driver-responsibilities">Driver responsibilities</a></li>
+            <li><a class="toc-link text-gray-300" href="#bookings">Bookings &amp; rides</a></li>
+            <li><a class="toc-link text-gray-300" href="#location-use">Location services</a></li>
+            <li><a class="toc-link text-gray-300" href="#payments">Payments &amp; fares</a></li>
+            <li><a class="toc-link text-gray-300" href="#ratings">Ratings &amp; conduct</a></li>
+            <li><a class="toc-link text-gray-300" href="#prohibited">Prohibited conduct</a></li>
+            <li><a class="toc-link text-gray-300" href="#suspension">Suspension &amp; termination</a></li>
+            <li><a class="toc-link text-gray-300" href="#deletion">Account deletion</a></li>
+            <li><a class="toc-link text-gray-300" href="#disclaimers">Disclaimers &amp; limitation of liability</a></li>
+            <li><a class="toc-link text-gray-300" href="#ip">Intellectual property</a></li>
+            <li><a class="toc-link text-gray-300" href="#privacy-ref">Privacy</a></li>
+            <li><a class="toc-link text-gray-300" href="#law">Governing law</a></li>
+            <li><a class="toc-link text-gray-300" href="#changes">Changes to these terms</a></li>
+            <li><a class="toc-link text-gray-300" href="#contact">Contact</a></li>
+        </ol>
+    </nav>
 
 
     <!-- Content Card -->
-    <div class="bg-brand-card border border-gray-800 rounded-2xl p-8 shadow-xl space-y-10">
+    <div class="bg-brand-card border border-brand-line rounded-2xl p-8 shadow-xl space-y-12">
 
 
-        <section>
+        <section id="acceptance">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
                 1. Acceptance of Terms
             </h2>
 
             <p class="leading-relaxed text-gray-300">
-                By creating an account and using SariNow, you agree
-                to comply with these Terms and Conditions. If you do
-                not agree with these terms, please do not use the
-                SariNow platform.
+                By creating an account and using SariNow, you agree to comply with these Terms and Conditions and
+                our Privacy Policy. If you do not agree with these terms, please do not use the SariNow platform.
+                You must be able to form a legally binding agreement to use SariNow.
             </p>
         </section>
 
 
 
-        <section>
+        <section id="about">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
                 2. About SariNow
             </h2>
 
             <p class="leading-relaxed text-gray-300">
-                SariNow is a designated driver platform that connects
-                users requiring transportation assistance with
-                available drivers. SariNow provides a technology
-                platform and does not replace the responsibilities
-                of individual users or drivers.
+                SariNow is a designated driver platform that connects riders requiring transportation assistance
+                with available, verified drivers. SariNow provides a technology platform for requesting a driver,
+                tracking a trip in progress, and confirming payment — it does not itself act as a transportation
+                carrier, and does not replace the independent responsibilities of riders and drivers to act safely
+                and lawfully.
             </p>
 
         </section>
 
 
 
-        <section>
+        <section id="eligibility">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                3. User Responsibilities
+                3. Eligibility &amp; Accounts
             </h2>
 
+            <p class="leading-relaxed text-gray-300 mb-3">
+                To use SariNow, you must be at least 18 years old and able to enter into a binding contract. When
+                you register, you'll be asked for your first and last name, email address, and phone number, which
+                is verified by a one-time passcode (OTP). You may also sign in using your Google account.
+            </p>
             <p class="leading-relaxed text-gray-300">
-                Users are responsible for providing accurate account
-                information, maintaining account security, and using
-                the service responsibly.
+                You are responsible for keeping your account credentials secure and for all activity that occurs
+                under your account. Notify us immediately if you suspect unauthorized use of your account.
             </p>
 
         </section>
 
 
 
-        <section>
+        <section id="driver-verification">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                4. Driver Responsibilities
+                4. Driver Eligibility &amp; Verification
+            </h2>
+
+            <p class="leading-relaxed text-gray-300 mb-3">
+                Before a driver account can accept rides, drivers must complete an identity verification process
+                ("KYC"), which requires submitting a government-issued ID (front and back), a driving license, and a
+                live selfie for identity confirmation.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                <li>SariNow reviews these submissions and may approve, reject, or request resubmission at its sole discretion.</li>
+                <li>Drivers must hold a valid driving license and any other authorization required by applicable law to operate a vehicle, and must keep this information accurate and current.</li>
+                <li>Approval to drive on SariNow does not constitute an employment relationship, and drivers operate as independent providers of designated driving services.</li>
+            </ul>
+
+        </section>
+
+
+
+        <section id="user-responsibilities">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                5. User (Rider) Responsibilities
             </h2>
 
             <p class="leading-relaxed text-gray-300">
-                Drivers using SariNow must provide accurate information,
-                comply with applicable laws, and deliver services in a
-                safe and professional manner.
+                Riders are responsible for providing accurate account and pickup/destination information,
+                maintaining account security, treating drivers respectfully and safely, being present and ready at
+                the agreed pickup location, and paying the confirmed fare in full at the end of the trip. Riders
+                are solely responsible for their own conduct and safety, and for that of any passengers or property
+                accompanying them.
             </p>
 
         </section>
 
 
 
-        <section>
+        <section id="driver-responsibilities">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                5. Payments and Fees
+                6. Driver Responsibilities
             </h2>
 
             <p class="leading-relaxed text-gray-300">
-                Any applicable fees, payments, or charges associated
-                with SariNow services will be communicated through the
-                platform. Users agree to complete payments according
-                to the applicable service terms.
+                Drivers using SariNow must provide accurate information, hold all licenses and authorizations
+                required under applicable law, comply with traffic and road safety laws, arrive for accepted rides
+                in a timely manner, and deliver services in a safe, professional, and respectful manner. Drivers are
+                solely responsible for their own conduct while providing rides through the platform.
             </p>
 
         </section>
 
 
 
-        <section>
+        <section id="bookings">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                6. Account Suspension
+                7. Bookings &amp; Rides
+            </h2>
+
+            <p class="leading-relaxed text-gray-300 mb-3">
+                When a rider requests a ride, SariNow attempts to match the request with an available, verified
+                driver based on location. Once matched, ride details (such as pickup and destination address, and
+                driver arrival status) are shared between the rider and driver as needed to complete the trip.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                <li>Either party may cancel a ride before it begins; repeated or unreasonable cancellations may affect your ability to use the platform.</li>
+                <li>Drivers and riders are expected to communicate through the app and to confirm the correct pickup and destination details before the trip starts.</li>
+                <li>SariNow does not guarantee driver availability at any given time or location.</li>
+            </ul>
+
+        </section>
+
+
+
+        <section id="location-use">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                8. Location Services
             </h2>
 
             <p class="leading-relaxed text-gray-300">
-                SariNow reserves the right to suspend or restrict
-                accounts that violate these terms, misuse the platform,
-                or create safety risks for other users.
+                SariNow requires access to your device's location, while the app is open and in use, to match
+                riders with nearby drivers, provide directions, and confirm pickup and destination points. If
+                location access is denied or disabled, SariNow may be unable to provide these core features.
             </p>
 
         </section>
 
 
 
-        <section>
+        <section id="payments">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                7. Privacy
+                9. Payments &amp; Fares
+            </h2>
+
+            <p class="leading-relaxed text-gray-300 mb-3">
+                SariNow currently supports cash payment only. Payment is made directly between the rider and driver
+                in person at the end of the trip — SariNow does not process, collect, or hold any payment on behalf
+                of either party, and is not a party to the payment transaction itself.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                <li>The fare shown in the app at the time of booking reflects the current pricing model, which at this stage is an introductory flat rate applied to all rides regardless of distance or time. This pricing model may change as the service develops, and any change will be reflected in the app before you confirm a ride.</li>
+                <li>Riders agree to pay the confirmed fare in cash directly to the driver upon completion of the trip.</li>
+                <li>Once a rider confirms payment in the app, SariNow records that confirmation to maintain an accurate trip and earnings history — this record does not constitute SariNow processing or guaranteeing the payment.</li>
+                <li>Additional payment methods may be introduced in the future and will be described in these Terms and in the Privacy Policy before becoming available.</li>
+            </ul>
+
+        </section>
+
+
+
+        <section id="ratings">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                10. Ratings &amp; Conduct
             </h2>
 
             <p class="leading-relaxed text-gray-300">
-                Your use of SariNow is also governed by our Privacy
-                Policy, which explains how we collect, use, and protect
-                your information.
+                After a ride, riders and drivers may rate each other and leave an optional comment. Ratings help
+                maintain the quality and safety of the platform. Consistently low ratings, or ratings accompanied
+                by reports of unsafe or inappropriate conduct, may result in a review of your account and, where
+                warranted, suspension or removal from the platform.
             </p>
 
         </section>
 
 
 
-        <section>
+        <section id="prohibited">
             <h2 class="text-2xl font-semibold text-orange-400 mb-3">
-                8. Contact
+                11. Prohibited Conduct
+            </h2>
+
+            <p class="leading-relaxed text-gray-300 mb-3">While using SariNow, you agree not to:</p>
+            <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                <li>Provide false, misleading, or fraudulent account or verification information</li>
+                <li>Use the platform for any unlawful purpose, or in a way that endangers other users, drivers, or the public</li>
+                <li>Harass, threaten, or discriminate against any rider or driver</li>
+                <li>Attempt to circumvent, tamper with, or interfere with the app's security, verification, or payment-recording features</li>
+                <li>Use another person's identity documents or account, or submit KYC documents that are not genuinely your own</li>
+                <li>Reverse-engineer, scrape, or misuse the SariNow platform or its underlying systems</li>
+            </ul>
+
+        </section>
+
+
+
+        <section id="suspension">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                12. Account Suspension &amp; Termination
             </h2>
 
             <p class="leading-relaxed text-gray-300">
-                For questions regarding these Terms and Conditions,
-                please contact KaribuTech.
+                SariNow reserves the right to suspend, restrict, or terminate any account that violates these
+                Terms, misuses the platform, fails driver verification, or creates safety risks for other users, at
+                our reasonable discretion and, where practical, with notice explaining the reason. You may also stop
+                using SariNow, and delete your account, at any time.
+            </p>
+
+        </section>
+
+
+
+        <section id="deletion">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                13. Account Deletion
+            </h2>
+
+            <p class="leading-relaxed text-gray-300">
+                You can permanently delete your account from within the app. Doing so removes your payment records,
+                ratings, driver KYC submissions, and trip history associated with your profile, and then removes
+                your account credentials. This action is irreversible, and any pending or unresolved rides or
+                payment confirmations should be settled before deleting your account.
+            </p>
+
+        </section>
+
+
+
+        <section id="disclaimers">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                14. Disclaimers &amp; Limitation of Liability
+            </h2>
+
+            <p class="leading-relaxed text-gray-300 mb-3">
+                SariNow is a technology platform that connects riders and drivers; it does not itself provide
+                transportation or driving services, and does not employ drivers. To the fullest extent permitted by
+                applicable law:
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-300 leading-relaxed">
+                <li>SariNow is provided "as is" and "as available," without warranties of any kind, express or implied, including as to availability, reliability, or fitness for a particular purpose.</li>
+                <li>SariNow is not responsible for the conduct, negligence, or actions of any rider or driver, on or off the platform, including during a trip.</li>
+                <li>SariNow is not liable for any indirect, incidental, or consequential damages arising from your use of the platform, to the maximum extent permitted by law.</li>
+            </ul>
+            <p class="leading-relaxed text-gray-300 mt-3">
+                Nothing in this section limits any liability that cannot be excluded or limited under applicable
+                law.
+            </p>
+
+        </section>
+
+
+
+        <section id="ip">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                15. Intellectual Property
+            </h2>
+
+            <p class="leading-relaxed text-gray-300">
+                The SariNow app, including its branding, design, and underlying software, is owned by or licensed to
+                SariTech and is protected by applicable intellectual property laws. You may not copy, modify,
+                distribute, or create derivative works from any part of the platform without our prior written
+                consent.
+            </p>
+
+        </section>
+
+
+
+        <section id="privacy-ref">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                16. Privacy
+            </h2>
+
+            <p class="leading-relaxed text-gray-300">
+                Your use of SariNow is also governed by our Privacy Policy, which explains how we collect, use, and
+                protect your information, including account details, location data, driver verification documents,
+                and trip and payment records.
+            </p>
+
+        </section>
+
+
+
+        <section id="law">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                17. Governing Law
+            </h2>
+
+            <p class="leading-relaxed text-gray-300">
+                These Terms are governed by the laws of the Republic of Rwanda, without regard to conflict of law
+                principles, unless otherwise required by the mandatory law of your place of residence.
+            </p>
+
+        </section>
+
+
+
+        <section id="changes">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                18. Changes to These Terms
+            </h2>
+
+            <p class="leading-relaxed text-gray-300">
+                We may update these Terms from time to time to reflect changes to the app or our practices. We will
+                update the "Last updated" date at the top of this page, and where changes are material, we will
+                provide additional notice through the app. Continued use of SariNow after changes take effect
+                constitutes acceptance of the updated Terms.
+            </p>
+
+        </section>
+
+
+
+        <section id="contact">
+            <h2 class="text-2xl font-semibold text-orange-400 mb-3">
+                19. Contact
+            </h2>
+
+            <p class="leading-relaxed text-gray-300">
+                For questions regarding these Terms and Conditions, please contact SariTech at
+                <a class="text-orange-400 hover:underline" href="mailto:support@SariTech.org">support@SariTech.org</a>.
             </p>
 
         </section>
@@ -194,7 +442,7 @@
     <!-- Footer -->
     <footer class="mt-10 text-center text-sm text-gray-500">
 
-        © 2026 KaribuTech. All rights reserved.
+        © 2026 SariTech. All rights reserved.
 
     </footer>
 
