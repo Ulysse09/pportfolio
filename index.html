@@ -23,7 +23,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 <body class="relative">
 
-    <nav class=" flex justify-between  py-2 px-2   sticky top-0       md:py-4  items-center mb-12 ">
+    <nav class=" flex justify-between  py-2 px-2   sticky top-0       md:py-4  items-center mb-12 "> 
     <h1 class="font-Rubik font-bold text-3xl">Kabalisa Paul</h1>
     
         <ul class="space-x-4 font-Rubik font-light hidden md:flex ">
@@ -66,14 +66,17 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 
 
      
-    <div id="about" class="flex flex-col-reverse p-4 md:p-12 justify-between  md:flex-row mb-20  md:mb-32 space  items-center  container mx-auto ">
+    <div id="about" class="flex  flex-col-reverse p-4 justify-between  md:flex-row mb-20  md:mb-32 space  items-center  container mx-auto ">
         <div class=" flex flex-col text-center md:text-left  gap-y-12  ">
             <div>
-                <h1 class="font-rubik max-w-lg md:max-w-xl container"><span class="md:text-7xl text-5xl max-w-lg  font-bold" id="text"></span> </h1>
+                <h1 class="font-rubik max-w-xl md:min-h-[200px] min-h-[75px] ">
+                    <span class="md:text-7xl text-5xl max-w-2xl  font-bold" id="text">
+                    </span> 
+                </h1>
                 
             </div>
             
-            <p class="font-Rubik font-light text-2xl max-w-lg  ">I specialize in Sales,UI and Web intergrations.</p>
+            <p class="font-Rubik font-light text-2xl max-w-lg  ">I specialize in Analytics,UI and Web intergrations.</p>
             
             <div class=" flex justify-center md:justify-start">
                 
@@ -93,10 +96,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     </div>
 
     <!-- pop-up -->
-     <div id="popup" class=" z-50 fixed md:top-30 top-10 bg-white soft-bounce text-black hidden  rounded-lg  md:inset-36  border-2 radius-2xl dark:border-white   p-12">
-        <div class=" flex flex-col items-center space-y-[2rem] p ">
+     <div id="popup" class=" z-50 fixed md:top-30 md:left-80 top-10 bg-white soft-bounce text-black hidden  rounded-lg  md:inset-36 md:w-1/2   border-2 radius-2xl dark:border-white    p-12">
+			<div onclick="closePopup()" class="flex flex-row-reverse">
+				<p class="font-bold flex-end text-lg px-5 py-3 bg-red-700 hover:bg-red-400 rounded-full text-white">
+					X
+				</p>
+
+			</div>
+
+        <div class=" flex flex-col items-center space-y-[2rem]  ">
+					<div class="flex items-center flex-col space-y-4 ">
             <h2 class="text-4xl font-bold  ">Let's Chat some more</h2>
-            <p class="text-3xl max-w-lg ">Click for a free developer consultation</p>
+            <p class="text-2xl font-sans max-w-md text-center ">Click for a free developer consultation</p>
+						
+					</div>
 
             <div class=" flex justify-center md:justify-start">
                 
@@ -419,6 +432,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     </div>
     
     <script src="./script.js"> </script>
+
+
+		<script>
+			function closePopup() {
+					document.getElementById("popup").classList.add("hidden");
+			}
+</script>
     <!-- <script>
         const btn = document.getElementById("wa-btn");
         btn.addEventListener("click", () => {

@@ -47,7 +47,7 @@ form.addEventListener('submit', (e) => {
 
 // cursor-animation
 
-const words = ['Optimized Sales Funnels. ','Pristine Product Pages.','Seamless Fintech intergrations.']
+const words = ['Landing Pages ','Mobile Apps','Dashboards']
 const staticText = 'I build ';
 const el = document.getElementById('text')
 
@@ -127,7 +127,8 @@ window.addEventListener("scroll", () => {
 
   if (scrollPosition > 550 && !shown) {
     popup.classList.remove("hidden");
-    // popup.classList.add("animate-bounce"); 
+    // popup.classList.add("animate-bounce");
+     
       shown = true;
   }
 
