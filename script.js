@@ -47,7 +47,7 @@ form.addEventListener('submit', (e) => {
 
 // cursor-animation
 
-const words = ['Landing Pages ','Mobile Apps','Dashboards']
+const words = ['AI Automation processes ','Decision Support Systems','Mobile Applications']
 const staticText = 'I build ';
 const el = document.getElementById('text')
 
