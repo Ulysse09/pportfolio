@@ -127,9 +127,9 @@ window.addEventListener("scroll", () => {
 
   if (scrollPosition > 550 && !shown) {
     popup.classList.remove("hidden");
-    // popup.classList.add("animate-bounce");
+    popup.classList.add("animate-popup");
      
-      shown = true;
+    shown = true;
   }
 
 });
@@ -147,3 +147,25 @@ document.querySelectorAll('.whatsapp-btn').forEach(btn => {
     });
   });
 });
+
+
+// carousel logic
+
+
+const track = document.getElementById("track");
+
+document.getElementById("next").onclick = () => {
+  track.scrollBy({
+    left: track.clientWidth,
+    behavior: "smooth"
+  });
+};
+
+document.getElementById("prev").onclick = () => {
+  track.scrollBy({
+    left: -track.clientWidth,
+    behavior: "smooth"
+  });
+};
+
+
